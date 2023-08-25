@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Haus Mobile Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img 
+        src="images/stonehaus.png" alt="Stone Haus logo"
+        class="sh-logo">
+    </header>
+    <main>
+        <div id="menu"></div>
+        <div id="order" class="hidden">
+            <h2>Your order</h2>
+            <div id="order-items"></div>
+            <div id="order-total">
+                <h3>Total</h3>
+                <h3 id="order-total-price"></h3>
+            </div>
+            <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+        </div>
+        <div id="payment-modal" class="hidden">
+            <div class="payment-modal-container">
+                <h3>Enter card details</h3>
+                <form id="payment-form">
+                    <input type="text" name="card-name" placeholder="Enter your name" required>
+                    <input type="text" name="card-number" placeholder="Enter card number" required>
+                    <input type="text" name="cvv" placeholder="Enter CVV" required>
+                </form>
+                <button type="submit" form="payment-form" class="payment-form-btn" id="payment-form-btn">Pay</button>
+                <button class="cancel-order-btn" id="cancel-order-btn">Cancel order</button>
+            </div>
+        </div>
+        <div class="order-complete-modal hidden"
+        id="order-complete-modal">
+            <img src="images/pizza.gif" alt="Gif of Dwight from the Office taking a bite out of a pizza" class="pizza-gif">
+            <p class="order-complete-text">Your order has been placed!</p>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

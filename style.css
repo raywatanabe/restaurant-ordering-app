@@ -1,0 +1,215 @@
+body {
+    margin: 0;  
+    user-select: none;
+}
+
+header, main{
+    margin: 0 auto;
+    max-width: 320px;
+    /* border: 1px solid red; */
+}
+
+header {
+    background-image: url("images/solitude-background.jpg");
+    background-color: black;
+    background-size: cover;
+    padding: 5px 0 15px;
+}
+
+.sh-logo{
+    width: 150px;
+    margin: 0 10px;
+}
+
+/* menu */
+
+.menu-item{
+    display: flex;
+    margin:  0 10px;
+    border-bottom: 1px solid #ccc;
+    gap: 10px;
+}
+
+.menu-item-emoji{
+    font-size: 48px;
+}
+
+.menu-item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.menu-item-ingredients {
+    font-size: 12px;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0;
+    font-style: italic;
+}
+
+.menu-item .fa-plus {
+    align-self: center;
+    margin-left: auto;
+    color:#ccc;
+    padding: 1px;
+    border: solid 2px #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* order details */
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin: -15px 0;
+}
+
+.order-item-name {
+    margin-right: 10px;
+}
+
+.order-item .fa-minus,
+.order-item .fa-plus{
+    color: #ccc;
+    cursor: pointer;
+}
+
+.order-item-price {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+#order {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: auto;
+    padding: 0 50px;
+    max-width: max-content;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+#order-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.complete-order-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #16DB99;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* payment modal */
+
+#payment-modal {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #ccc;
+    border-radius: 5px;
+}
+
+.payment-modal-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+#payment-form {
+    margin-bottom: 10px;
+}
+
+#payment-form input {
+    border: 1px solid #ccc;
+    border-radius: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#payment-modal button {
+    display: block;
+    margin: 0 10px;
+    border-radius: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-form-btn {
+    background-color: #16DB99;
+}
+
+.cancel-order-btn {
+    background-color: #ccc;
+}
+
+/* order complete modal */
+
+.order-complete-modal {
+    width: 250px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pizza-gif {
+    width: 200px;
+    margin: 0;
+}
+
+.order-complete-text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
